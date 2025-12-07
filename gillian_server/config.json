@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0-hybrid",
+  "server": {
+    "port": 8770,
+    "host": "127.0.0.1",
+    "use_ngrok": true,
+    "ngrok_authtoken": ""
+  },
+  "personality": {
+    "name": "Gillian",
+    "accent": "british",
+    "formality": "professional_friendly",
+    "acknowledgments": [
+      "Right away, sir.",
+      "Consider it done.",
+      "At once.",
+      "Understood, Michael.",
+      "Very good, sir.",
+      "I'll see to it.",
+      "Certainly."
+    ],
+    "confirmations": [
+      "Task queued successfully.",
+      "I've made a note of that.",
+      "Logged and ready.",
+      "All sorted."
+    ],
+    "errors": [
+      "I'm afraid I didn't quite catch that.",
+      "Could you rephrase that, please?",
+      "I'm not sure I understand.",
+      "That's a bit unclear, sir."
+    ]
+  },
+  "intents": {
+    "pc_task": {
+      "keywords": ["open", "run", "execute", "start", "launch", "kill", "close"],
+      "apps": {
+        "chrome": "start chrome",
+        "browser": "start chrome",
+        "firefox": "start firefox",
+        "vscode": "code",
+        "vs code": "code",
+        "visual studio code": "code",
+        "notepad": "notepad",
+        "calculator": "calc",
+        "explorer": "explorer"
+      }
+    },
+    "note": {
+      "keywords": ["note", "remember", "remind", "log", "record"]
+    },
+    "query": {
+      "keywords": ["what", "when", "where", "who", "how", "status", "check"]
+    },
+    "system": {
+      "keywords": ["shutdown", "restart", "sleep", "volume", "brightness"]
+    }
+  },
+  "task_runner": {
+    "poll_interval_seconds": 5,
+    "max_retries": 3,
+    "safe_mode": true
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gillian AI - Quick Access</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0F0F1E 0%, #1a1a3e 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(26, 26, 46, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #6C63FF 0%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .status {
+            font-size: 24px;
+            color: #00E676;
+            margin-bottom: 40px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        a {
+            display: block;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, #6C63FF 0%, #5548E8 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            transition: transform 0.3s;
+        }
+        a:hover {
+            transform: scale(1.05);
+        }
+        .info {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(108, 99, 255, 0.1);
+            border-radius: 12px;
+            font-size: 14px;
+            color: #B8B8D1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Gillian AI</h1>
+        <div class="status">✅ Server is Running!</div>
+
+        <div class="links">
+            <a href="http://localhost:8770" target="_blank">🎤 Open PWA Interface</a>
+            <a href="http://localhost:8770/health" target="_blank">🏥 Health Check</a>
+            <a href="file:///home/user/gillian/README_PRODUCTION.md" target="_blank">📚 Read Documentation</a>
+        </div>
+
+        <div class="info">
+            <strong>Quick Test:</strong><br>
+            Open PWA → Click microphone → Say "Hello Gillian"
+            <br><br>
+            <strong>Files Location:</strong><br>
+            /home/user/gillian/
+            <br><br>
+            <strong>To Stop:</strong> ./STOP.sh
+        </div>
+    </div>
+</body>
+</html>
